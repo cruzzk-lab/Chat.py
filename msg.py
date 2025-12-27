@@ -21,9 +21,9 @@ def gerar_resposta(mensagem):
     elif "feliz" in mensagem:
         return "que foda"
     elif "tchau" in mensagem:
-        return "Tchauzinho! Volta logo, viu? 👋"
+        return "Tchau, até a próxima"
     else:
-        return "Ainda estou aprendendo, mas quero muito conversar com você!"
+        return "Erro"
 
 
 janela = tk.Tk()
@@ -39,7 +39,9 @@ entrada = tk.Entry(janela, width=40)
 entrada.pack(side=tk.LEFT, padx=10)
 
 
+
 botao = tk.Button(janela, text="Enviar", command=responder)
 botao.pack(side=tk.LEFT)
 
 janela.mainloop()
+
